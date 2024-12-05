@@ -1,0 +1,74 @@
+<project name="NodeBaSt" basedir="." default="run">
+    
+    <!-- Directorios y archivos -->
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="dist.dir" value="${build.dir}/dist"/>
+
+    <!-- Limpieza del proyecto -->
+    <target name="clean">
+	
+        <delete dir="${build.dir}"/>
+		
+    </target>
+
+    <!-- Compiler -->
+    <target name="compile" depends="clean">
+	
+        <mkdir dir="${classes.dir}"/>
+		
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" includeantruntime="false">
+		
+            <classpath>
+			
+                <pathelement location="lib/*.jar"/>
+				
+            </classpath>
+			
+        </javac>
+		
+    </target>
+
+    <!-- Runner -->
+    <!--<target name="run" depends="compile">
+	
+        <java classname="Mechanics.Main.Main" fork="true" outputproperty="program.output">
+		
+            <classpath>
+			
+                <pathelement location="${classes.dir}"/>
+				
+            </classpath>
+			
+        </java>
+        
+        <echo>${program.output}</echo>
+		
+    </target>-->
+
+	<target name="run" depends="compile">
+	
+		<java classname="Mechanics.Main.Main" fork="true">
+		
+			<classpath>
+			
+				<pathelement location="${classes.dir}"/>
+				
+			</classpath>
+			
+		</java>
+		
+	</target>
+
+
+    <!-- JAR -->
+    <target name="jar" depends="compile">
+	
+        <mkdir dir="${dist.dir}"/>
+		
+        <jar destfile="${dist.dir}/NodeBaSt.jar" basedir="${classes.dir}"/>
+		
+    </target>
+
+</project>
