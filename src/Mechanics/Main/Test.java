@@ -1,6 +1,8 @@
 package Mechanics.Main;
 
-import java.util.Scanner;
+import Nodes.*;
+import LinkedArrays.*;
+import Trees.*;
 
 public class Test{
 

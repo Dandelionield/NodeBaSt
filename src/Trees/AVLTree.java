@@ -1,4 +1,4 @@
-package Algorithm.Trees;
+package Trees;
 
 /*
  *
@@ -6,7 +6,7 @@ package Algorithm.Trees;
  * 
  */
 
-import Algorithm.Nodes.BinaryNode;
+import Nodes.BinaryNode;
 
 public class AVLTree<T extends Comparable<T>> extends BinarySearchTree<T>{
 

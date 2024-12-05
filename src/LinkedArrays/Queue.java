@@ -1,4 +1,4 @@
-package Algorithm.LinkedArrays;
+package LinkedArrays;
 
 /*
  *
@@ -6,8 +6,8 @@ package Algorithm.LinkedArrays;
  * 
  */
 
-import Algorithm.LinkedArrays.DoubleList;
-import Algorithm.Nodes.DoubleNode;
+import LinkedArrays.DoubleList;
+import Nodes.DoubleNode;
 
 public class Queue<T extends Comparable<T>> extends DoubleList<T>{
 

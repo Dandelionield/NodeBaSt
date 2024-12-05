@@ -1,4 +1,4 @@
-package Algorithm.LinkedArrays;
+package LinkedArrays;
 
 /*
  *
@@ -6,7 +6,7 @@ package Algorithm.LinkedArrays;
  * 
  */
 
-import Algorithm.Nodes.Node;
+import Nodes.Node;
 
 public class List<T extends Comparable<T>>{
 

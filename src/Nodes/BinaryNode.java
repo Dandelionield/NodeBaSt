@@ -1,14 +1,10 @@
-package Algorithm.Nodes;
+package Nodes;
 
 /*
  *
  * @author Dandelion
  * 
  */
-
-import java.util.Stack;
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class BinaryNode<T> extends DoubleNode<T>{
 

@@ -1,4 +1,4 @@
-package Algorithm.LinkedArrays;
+package LinkedArrays;
 
 /*
  *
@@ -6,7 +6,7 @@ package Algorithm.LinkedArrays;
  * 
  */
 
-import Algorithm.Nodes.DoubleNode;
+import Nodes.DoubleNode;
 
 public class DoubleList<T extends Comparable<T>>{
 	
